@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6F3BF7418B6076000672DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F3BF7318B6076000672DAB /* Foundation.framework */; };
+		B6F3BF7618B6076000672DAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F3BF7518B6076000672DAB /* CoreGraphics.framework */; };
+		B6F3BF7818B6076000672DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F3BF7718B6076000672DAB /* UIKit.framework */; };
+		B6F3BF7E18B6076000672DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6F3BF7C18B6076000672DAB /* InfoPlist.strings */; };
+		B6F3BF8018B6076000672DAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F3BF7F18B6076000672DAB /* main.m */; };
+		B6F3BF8418B6076000672DAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F3BF8318B6076000672DAB /* AppDelegate.m */; };
+		B6F3BF8718B6076000672DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F3BF8518B6076000672DAB /* Main.storyboard */; };
+		B6F3BF8A18B6076000672DAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F3BF8918B6076000672DAB /* ViewController.m */; };
+		B6F3BF8C18B6076000672DAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F3BF8B18B6076000672DAB /* Images.xcassets */; };
+		B6F3BF9318B6076000672DAB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F3BF9218B6076000672DAB /* XCTest.framework */; };
+		B6F3BF9418B6076000672DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F3BF7318B6076000672DAB /* Foundation.framework */; };
+		B6F3BF9518B6076000672DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F3BF7718B6076000672DAB /* UIKit.framework */; };
+		B6F3BF9D18B6076000672DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6F3BF9B18B6076000672DAB /* InfoPlist.strings */; };
+		B6F3BF9F18B6076000672DAB /* realRandomizrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F3BF9E18B6076000672DAB /* realRandomizrTests.m */; };
+		B6F3BFAA18B607B400672DAB /* randomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F3BFA918B607B400672DAB /* randomNumber.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6F3BF9618B6076000672DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6F3BF6818B6076000672DAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6F3BF6F18B6076000672DAB;
+			remoteInfo = realRandomizr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6F3BF7018B6076000672DAB /* realRandomizr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = realRandomizr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F3BF7318B6076000672DAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6F3BF7518B6076000672DAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6F3BF7718B6076000672DAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B6F3BF7B18B6076000672DAB /* realRandomizr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "realRandomizr-Info.plist"; sourceTree = "<group>"; };
+		B6F3BF7D18B6076000672DAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6F3BF7F18B6076000672DAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6F3BF8118B6076000672DAB /* realRandomizr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "realRandomizr-Prefix.pch"; sourceTree = "<group>"; };
+		B6F3BF8218B6076000672DAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6F3BF8318B6076000672DAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6F3BF8618B6076000672DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6F3BF8818B6076000672DAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6F3BF8918B6076000672DAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6F3BF8B18B6076000672DAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6F3BF9118B6076000672DAB /* realRandomizrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = realRandomizrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F3BF9218B6076000672DAB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B6F3BF9A18B6076000672DAB /* realRandomizrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "realRandomizrTests-Info.plist"; sourceTree = "<group>"; };
+		B6F3BF9C18B6076000672DAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6F3BF9E18B6076000672DAB /* realRandomizrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = realRandomizrTests.m; sourceTree = "<group>"; };
+		B6F3BFA818B607B400672DAB /* randomNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = randomNumber.h; sourceTree = "<group>"; };
+		B6F3BFA918B607B400672DAB /* randomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = randomNumber.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6F3BF6D18B6076000672DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F3BF7618B6076000672DAB /* CoreGraphics.framework in Frameworks */,
+				B6F3BF7818B6076000672DAB /* UIKit.framework in Frameworks */,
+				B6F3BF7418B6076000672DAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F3BF8E18B6076000672DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F3BF9318B6076000672DAB /* XCTest.framework in Frameworks */,
+				B6F3BF9518B6076000672DAB /* UIKit.framework in Frameworks */,
+				B6F3BF9418B6076000672DAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6F3BF6718B6076000672DAB = {
+			isa = PBXGroup;
+			children = (
+				B6F3BF7918B6076000672DAB /* realRandomizr */,
+				B6F3BF9818B6076000672DAB /* realRandomizrTests */,
+				B6F3BF7218B6076000672DAB /* Frameworks */,
+				B6F3BF7118B6076000672DAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6F3BF7118B6076000672DAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3BF7018B6076000672DAB /* realRandomizr.app */,
+				B6F3BF9118B6076000672DAB /* realRandomizrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6F3BF7218B6076000672DAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3BF7318B6076000672DAB /* Foundation.framework */,
+				B6F3BF7518B6076000672DAB /* CoreGraphics.framework */,
+				B6F3BF7718B6076000672DAB /* UIKit.framework */,
+				B6F3BF9218B6076000672DAB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6F3BF7918B6076000672DAB /* realRandomizr */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3BF8218B6076000672DAB /* AppDelegate.h */,
+				B6F3BF8318B6076000672DAB /* AppDelegate.m */,
+				B6F3BF8518B6076000672DAB /* Main.storyboard */,
+				B6F3BFA818B607B400672DAB /* randomNumber.h */,
+				B6F3BFA918B607B400672DAB /* randomNumber.m */,
+				B6F3BF8818B6076000672DAB /* ViewController.h */,
+				B6F3BF8918B6076000672DAB /* ViewController.m */,
+				B6F3BF8B18B6076000672DAB /* Images.xcassets */,
+				B6F3BF7A18B6076000672DAB /* Supporting Files */,
+			);
+			path = realRandomizr;
+			sourceTree = "<group>";
+		};
+		B6F3BF7A18B6076000672DAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3BF7B18B6076000672DAB /* realRandomizr-Info.plist */,
+				B6F3BF7C18B6076000672DAB /* InfoPlist.strings */,
+				B6F3BF7F18B6076000672DAB /* main.m */,
+				B6F3BF8118B6076000672DAB /* realRandomizr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6F3BF9818B6076000672DAB /* realRandomizrTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3BF9E18B6076000672DAB /* realRandomizrTests.m */,
+				B6F3BF9918B6076000672DAB /* Supporting Files */,
+			);
+			path = realRandomizrTests;
+			sourceTree = "<group>";
+		};
+		B6F3BF9918B6076000672DAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6F3BF9A18B6076000672DAB /* realRandomizrTests-Info.plist */,
+				B6F3BF9B18B6076000672DAB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6F3BF6F18B6076000672DAB /* realRandomizr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6F3BFA218B6076000672DAB /* Build configuration list for PBXNativeTarget "realRandomizr" */;
+			buildPhases = (
+				B6F3BF6C18B6076000672DAB /* Sources */,
+				B6F3BF6D18B6076000672DAB /* Frameworks */,
+				B6F3BF6E18B6076000672DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = realRandomizr;
+			productName = realRandomizr;
+			productReference = B6F3BF7018B6076000672DAB /* realRandomizr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6F3BF9018B6076000672DAB /* realRandomizrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6F3BFA518B6076000672DAB /* Build configuration list for PBXNativeTarget "realRandomizrTests" */;
+			buildPhases = (
+				B6F3BF8D18B6076000672DAB /* Sources */,
+				B6F3BF8E18B6076000672DAB /* Frameworks */,
+				B6F3BF8F18B6076000672DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6F3BF9718B6076000672DAB /* PBXTargetDependency */,
+			);
+			name = realRandomizrTests;
+			productName = realRandomizrTests;
+			productReference = B6F3BF9118B6076000672DAB /* realRandomizrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6F3BF6818B6076000672DAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "DMU MAC 07";
+				TargetAttributes = {
+					B6F3BF9018B6076000672DAB = {
+						TestTargetID = B6F3BF6F18B6076000672DAB;
+					};
+				};
+			};
+			buildConfigurationList = B6F3BF6B18B6076000672DAB /* Build configuration list for PBXProject "realRandomizr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6F3BF6718B6076000672DAB;
+			productRefGroup = B6F3BF7118B6076000672DAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6F3BF6F18B6076000672DAB /* realRandomizr */,
+				B6F3BF9018B6076000672DAB /* realRandomizrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6F3BF6E18B6076000672DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F3BF8C18B6076000672DAB /* Images.xcassets in Resources */,
+				B6F3BF7E18B6076000672DAB /* InfoPlist.strings in Resources */,
+				B6F3BF8718B6076000672DAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F3BF8F18B6076000672DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F3BF9D18B6076000672DAB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6F3BF6C18B6076000672DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F3BF8A18B6076000672DAB /* ViewController.m in Sources */,
+				B6F3BF8418B6076000672DAB /* AppDelegate.m in Sources */,
+				B6F3BF8018B6076000672DAB /* main.m in Sources */,
+				B6F3BFAA18B607B400672DAB /* randomNumber.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F3BF8D18B6076000672DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F3BF9F18B6076000672DAB /* realRandomizrTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6F3BF9718B6076000672DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6F3BF6F18B6076000672DAB /* realRandomizr */;
+			targetProxy = B6F3BF9618B6076000672DAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6F3BF7C18B6076000672DAB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6F3BF7D18B6076000672DAB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6F3BF8518B6076000672DAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6F3BF8618B6076000672DAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6F3BF9B18B6076000672DAB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6F3BF9C18B6076000672DAB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6F3BFA018B6076000672DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6F3BFA118B6076000672DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6F3BFA318B6076000672DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "realRandomizr/realRandomizr-Prefix.pch";
+				INFOPLIST_FILE = "realRandomizr/realRandomizr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6F3BFA418B6076000672DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "realRandomizr/realRandomizr-Prefix.pch";
+				INFOPLIST_FILE = "realRandomizr/realRandomizr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B6F3BFA618B6076000672DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/realRandomizr.app/realRandomizr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "realRandomizr/realRandomizr-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "realRandomizrTests/realRandomizrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B6F3BFA718B6076000672DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/realRandomizr.app/realRandomizr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "realRandomizr/realRandomizr-Prefix.pch";
+				INFOPLIST_FILE = "realRandomizrTests/realRandomizrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6F3BF6B18B6076000672DAB /* Build configuration list for PBXProject "realRandomizr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F3BFA018B6076000672DAB /* Debug */,
+				B6F3BFA118B6076000672DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6F3BFA218B6076000672DAB /* Build configuration list for PBXNativeTarget "realRandomizr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F3BFA318B6076000672DAB /* Debug */,
+				B6F3BFA418B6076000672DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6F3BFA518B6076000672DAB /* Build configuration list for PBXNativeTarget "realRandomizrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F3BFA618B6076000672DAB /* Debug */,
+				B6F3BFA718B6076000672DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6F3BF6818B6076000672DAB /* Project object */;
+}
