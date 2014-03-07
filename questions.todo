@@ -1,0 +1,3 @@
+Class interactions:
+  ☐ How a class can access properties from a ViewController with protocols?
+  ☐ How a ViewController can use sourceViewController and destinationViewController to access properties of another View Controller? What about presentingViewController and presentedViewController?
