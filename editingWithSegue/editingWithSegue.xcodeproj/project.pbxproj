@@ -21,6 +21,7 @@
 		4C4B5DE018C9E410005736C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4B5DC218C9E410005736C8 /* UIKit.framework */; };
 		4C4B5DE818C9E410005736C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C4B5DE618C9E410005736C8 /* InfoPlist.strings */; };
 		4C4B5DEA18C9E410005736C8 /* editingWithSegueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B5DE918C9E410005736C8 /* editingWithSegueTests.m */; };
+		4CAD726718CB22F8009C8C51 /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAD726618CB22F8009C8C51 /* EditorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		4C4B5DE518C9E410005736C8 /* editingWithSegueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "editingWithSegueTests-Info.plist"; sourceTree = "<group>"; };
 		4C4B5DE718C9E410005736C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C4B5DE918C9E410005736C8 /* editingWithSegueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = editingWithSegueTests.m; sourceTree = "<group>"; };
+		4CAD726518CB22F8009C8C51 /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
+		4CAD726618CB22F8009C8C51 /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				4C4B5DCD18C9E410005736C8 /* AppDelegate.h */,
 				4C4B5DCE18C9E410005736C8 /* AppDelegate.m */,
 				4C4B5DD018C9E410005736C8 /* Main.storyboard */,
+				4CAD726518CB22F8009C8C51 /* EditorViewController.h */,
+				4CAD726618CB22F8009C8C51 /* EditorViewController.m */,
 				4C4B5DD318C9E410005736C8 /* ViewController.h */,
 				4C4B5DD418C9E410005736C8 /* ViewController.m */,
 				4C4B5DD618C9E410005736C8 /* Images.xcassets */,
@@ -252,6 +257,7 @@
 				4C4B5DD518C9E410005736C8 /* ViewController.m in Sources */,
 				4C4B5DCF18C9E410005736C8 /* AppDelegate.m in Sources */,
 				4C4B5DCB18C9E410005736C8 /* main.m in Sources */,
+				4CAD726718CB22F8009C8C51 /* EditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +466,7 @@
 				4C4B5DEF18C9E410005736C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C4B5DF018C9E410005736C8 /* Build configuration list for PBXNativeTarget "editingWithSegueTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				4C4B5DF218C9E410005736C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

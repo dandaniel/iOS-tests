@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
+
+-(IBAction)returnToMain:(UIStoryboardSegue *)segue;
+
 @end

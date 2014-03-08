@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  editingWithSegue
+//  toolbarPop
 //
-//  Created by Dan Mindru on 07/03/14.
+//  Created by Dan Mindru on 08/03/14.
 //  Copyright (c) 2014 Dan Mindru. All rights reserved.
 //
 
@@ -25,9 +25,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
--(IBAction)returnToMain:(UIStoryboardSegue *)segue{}
-
-
 
 @end
