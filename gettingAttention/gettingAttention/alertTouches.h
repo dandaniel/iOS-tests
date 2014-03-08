@@ -8,13 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ViewControllerDelegate
--(void)updateLabelText:(NSString *)newText;
+@interface alertTouches : UIViewController <UIAlertViewDelegate>
+@property (weak, nonatomic) id delegate;
 
-@end
-
-//@interface alertTouches : UIViewController <UIAlertViewDelegate>
-@interface alertTouches : UIViewController
-@property (weak, nonatomic) id <ViewControllerDelegate> viewControllerDelegate;
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 
 @end

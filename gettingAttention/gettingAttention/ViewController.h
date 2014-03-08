@@ -8,9 +8,9 @@
 
 @import AudioToolbox;
 #import <UIKit/UIKit.h>
-#import "alertTouches.h"
 
-//@interface ViewController : UIViewController <ViewControllerDelegate>
 @interface ViewController :UIViewController <UIAlertViewDelegate, UIActionSheetDelegate>
+
+- (void)updateLabelText:(NSString *)newText;
 
 @end

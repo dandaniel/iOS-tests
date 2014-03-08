@@ -7,6 +7,7 @@
 //
 
 #import "alertTouches.h"
+#import "ViewController.h"
 
 @implementation alertTouches
 
@@ -14,7 +15,8 @@
 	NSString * buttonTitle = [alertView	buttonTitleAtIndex:buttonIndex];
 	
 	if([buttonTitle isEqualToString:@"Do this"]){
-		[self.viewControllerDelegate updateLabelText:@"Did this"];
+		
+		[(ViewController*)self.delegate updateLabelText:@"Did this"];
 	}
 }
 

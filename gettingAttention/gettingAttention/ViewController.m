@@ -28,11 +28,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-//- (void)updateLabelText:(NSString *)newText{
-//	self.userOutput.text = newText;
-//}
+- (void)updateLabelText:(NSString *)newText{
+	self.userOutput.text = newText;
+}
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+	//comment this out to try output label.. -> updateLabelText:
 	NSString * buttonTitle = [alertView	buttonTitleAtIndex:buttonIndex];
 	
 	if([buttonTitle isEqualToString:@"Do this"]){

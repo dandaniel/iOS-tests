@@ -10,4 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *todayDate;
+@property (weak, nonatomic) IBOutlet UILabel *resultDescription;
+@property (weak, nonatomic) IBOutlet UILabel *resultMessage;
+@property (weak, nonatomic) IBOutlet UILabel *chosenDate;
+
 @end
