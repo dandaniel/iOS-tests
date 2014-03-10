@@ -79,6 +79,7 @@
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"defaultCell"];
 		cell.textLabel.text = self.dataKeys[indexPath.row];
 		cell.detailTextLabel.text = self.dataValues[indexPath.row];
+		[cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
 	}
 	else{
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"settingsCell"];
