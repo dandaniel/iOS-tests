@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Phalcon</key>
+	<dict>
+		<key>Documentation is really nice.. </key>
+		<string>False</string>
+	</dict>
+	<key>Laravel</key>
+	<dict>
+		<key>Elegant php framework</key>
+		<string>True</string>
+	</dict>
+	<key>node JS</key>
+	<dict>
+		<key>Javascript all the way, nobody would have thought</key>
+		<string>True</string>
+	</dict>
+	<key>Mac OS</key>
+	<dict>
+		<key>The terminal really is most of the system</key>
+		<string>False</string>
+	</dict>
+	<key>Amazon WS</key>
+	<dict>
+		<key>A good experience</key>
+		<string>False</string>
+	</dict>
+	<key>iOS Development</key>
+	<dict>
+		<key>Segues are really annoying sometimes</key>
+		<string>True</string>
+	</dict>
+	<key>Angular JS</key>
+	<dict>
+		<key>Services/factories can be very helpful</key>
+		<string>True</string>
+	</dict>
+</dict>
+</plist>
