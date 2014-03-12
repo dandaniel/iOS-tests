@@ -24,6 +24,8 @@
 		4CC19CA018CF4524003044F2 /* PhotoTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC19C9F18CF4524003044F2 /* PhotoTable.m */; };
 		4CC19CA318CF4542003044F2 /* SinglePhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC19CA218CF4542003044F2 /* SinglePhotoView.m */; };
 		4CC19CA618CF4561003044F2 /* DetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC19CA518CF4561003044F2 /* DetailsView.m */; };
+		4CC19CAA18D05E1F003044F2 /* imagedata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CC19CA918D05E1F003044F2 /* imagedata.plist */; };
+		4CC19CAF18D06301003044F2 /* AddPostcard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC19CAE18D06301003044F2 /* AddPostcard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		4CC19CA218CF4542003044F2 /* SinglePhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglePhotoView.m; sourceTree = "<group>"; };
 		4CC19CA418CF4561003044F2 /* DetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsView.h; sourceTree = "<group>"; };
 		4CC19CA518CF4561003044F2 /* DetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsView.m; sourceTree = "<group>"; };
+		4CC19CA918D05E1F003044F2 /* imagedata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = imagedata.plist; path = ../imagedata.plist; sourceTree = "<group>"; };
+		4CC19CAD18D06301003044F2 /* AddPostcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPostcard.h; sourceTree = "<group>"; };
+		4CC19CAE18D06301003044F2 /* AddPostcard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostcard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +133,13 @@
 				4CC19C9918CF42DF003044F2 /* Main.storyboard */,
 				4CC19C9E18CF4524003044F2 /* PhotoTable.h */,
 				4CC19C9F18CF4524003044F2 /* PhotoTable.m */,
+				4CC19CAD18D06301003044F2 /* AddPostcard.h */,
+				4CC19CAE18D06301003044F2 /* AddPostcard.m */,
 				4CC19CA118CF4542003044F2 /* SinglePhotoView.h */,
 				4CC19CA218CF4542003044F2 /* SinglePhotoView.m */,
 				4CC19CA418CF4561003044F2 /* DetailsView.h */,
 				4CC19CA518CF4561003044F2 /* DetailsView.m */,
+				4CC19CA918D05E1F003044F2 /* imagedata.plist */,
 				4CC19C7C18CF42BB003044F2 /* Images.xcassets */,
 				4CC19C7118CF42B9003044F2 /* Supporting Files */,
 			);
@@ -244,6 +252,7 @@
 			files = (
 				4CC19C9A18CF42DF003044F2 /* Main.storyboard in Resources */,
 				4CC19C7518CF42B9003044F2 /* InfoPlist.strings in Resources */,
+				4CC19CAA18D05E1F003044F2 /* imagedata.plist in Resources */,
 				4CC19C7D18CF42BB003044F2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +277,7 @@
 				4CC19CA318CF4542003044F2 /* SinglePhotoView.m in Sources */,
 				4CC19C7B18CF42BA003044F2 /* AppDelegate.m in Sources */,
 				4CC19C7718CF42BA003044F2 /* main.m in Sources */,
+				4CC19CAF18D06301003044F2 /* AddPostcard.m in Sources */,
 				4CC19CA618CF4561003044F2 /* DetailsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

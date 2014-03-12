@@ -4,6 +4,128 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
+        <!--Add Postcard - Add Postcard-->
+        <scene sceneID="a11-d6-Voq">
+            <objects>
+                <viewController id="hMg-kG-1Qd" customClass="AddPostcard" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fKU-g8-zJE"/>
+                        <viewControllerLayoutGuide type="bottom" id="eRt-z4-8z9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jCy-1L-ShB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4K-nh-c2q">
+                                <rect key="frame" x="0.0" y="62" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-h9-woG">
+                                        <rect key="frame" x="20" y="42" width="301" height="210"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="210" id="4Xw-FJ-0BY"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select an image:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNa-eD-2oT">
+                                        <rect key="frame" x="20" y="13" width="182" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please add a title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hx-mu-ZH4">
+                                        <rect key="frame" x="20" y="260" width="137" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please add a message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbQ-EM-zj3">
+                                        <rect key="frame" x="20" y="327" width="179" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Postcard title" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GkU-UD-NfX">
+                                        <rect key="frame" x="19" y="289" width="281" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="tA2-TB-6XM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Postcard message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlx-6W-yO8">
+                                        <rect key="frame" x="19" y="356" width="281" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4Qj-X4-zgu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzY-PY-3Wp">
+                                        <rect key="frame" x="20" y="410" width="281" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="Z3v-9q-h4H"/>
+                                        </constraints>
+                                        <state key="normal" title="Create postcard">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4Hx-mu-ZH4" firstAttribute="top" secondItem="2bQ-h9-woG" secondAttribute="bottom" constant="8" symbolic="YES" id="0OL-qt-wdf"/>
+                                    <constraint firstItem="lzY-PY-3Wp" firstAttribute="centerX" secondItem="X4K-nh-c2q" secondAttribute="centerX" id="0Qc-Dg-3wr"/>
+                                    <constraint firstItem="dlx-6W-yO8" firstAttribute="leading" secondItem="GkU-UD-NfX" secondAttribute="leading" id="6Bs-vd-ZKc"/>
+                                    <constraint firstItem="2bQ-h9-woG" firstAttribute="top" secondItem="dNa-eD-2oT" secondAttribute="bottom" constant="8" symbolic="YES" id="6SW-YN-HwA"/>
+                                    <constraint firstItem="hbQ-EM-zj3" firstAttribute="top" secondItem="GkU-UD-NfX" secondAttribute="bottom" constant="8" symbolic="YES" id="CaD-Wr-nqz"/>
+                                    <constraint firstAttribute="trailing" secondItem="GkU-UD-NfX" secondAttribute="trailing" constant="20" id="HAS-RB-j7i"/>
+                                    <constraint firstItem="GkU-UD-NfX" firstAttribute="trailing" secondItem="dlx-6W-yO8" secondAttribute="trailing" id="O17-xs-Pvy"/>
+                                    <constraint firstItem="dNa-eD-2oT" firstAttribute="leading" secondItem="X4K-nh-c2q" secondAttribute="leading" constant="20" symbolic="YES" id="OQm-ci-koo"/>
+                                    <constraint firstItem="dNa-eD-2oT" firstAttribute="leading" secondItem="2bQ-h9-woG" secondAttribute="leading" id="WXj-JR-q5V"/>
+                                    <constraint firstItem="dNa-eD-2oT" firstAttribute="top" secondItem="X4K-nh-c2q" secondAttribute="top" constant="13" id="Woa-xY-p7H"/>
+                                    <constraint firstItem="lzY-PY-3Wp" firstAttribute="top" secondItem="dlx-6W-yO8" secondAttribute="bottom" constant="24" id="e0w-Dp-B0I"/>
+                                    <constraint firstAttribute="trailing" secondItem="2bQ-h9-woG" secondAttribute="trailing" constant="-1" id="eL8-dL-QYt"/>
+                                    <constraint firstItem="4Hx-mu-ZH4" firstAttribute="leading" secondItem="2bQ-h9-woG" secondAttribute="leading" id="g6i-43-AQo"/>
+                                    <constraint firstItem="4Hx-mu-ZH4" firstAttribute="leading" secondItem="hbQ-EM-zj3" secondAttribute="leading" id="gQI-JM-2Df"/>
+                                    <constraint firstItem="lzY-PY-3Wp" firstAttribute="leading" secondItem="hbQ-EM-zj3" secondAttribute="leading" id="kW3-Ja-uqg"/>
+                                    <constraint firstItem="dlx-6W-yO8" firstAttribute="top" secondItem="hbQ-EM-zj3" secondAttribute="bottom" constant="8" symbolic="YES" id="mva-ic-4MZ"/>
+                                    <constraint firstItem="GkU-UD-NfX" firstAttribute="leading" secondItem="X4K-nh-c2q" secondAttribute="leading" constant="19" id="qVP-do-MvM"/>
+                                    <constraint firstAttribute="trailing" secondItem="lzY-PY-3Wp" secondAttribute="trailing" constant="19" id="qXU-Jb-hoV"/>
+                                    <constraint firstItem="GkU-UD-NfX" firstAttribute="top" secondItem="4Hx-mu-ZH4" secondAttribute="bottom" constant="8" id="xqA-On-ZaS"/>
+                                    <constraint firstAttribute="bottom" secondItem="lzY-PY-3Wp" secondAttribute="bottom" constant="61" id="zYN-NG-l1k"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="X4K-nh-c2q" secondAttribute="trailing" id="7Ew-Ed-80s"/>
+                            <constraint firstItem="X4K-nh-c2q" firstAttribute="top" secondItem="fKU-g8-zJE" secondAttribute="bottom" constant="-2" id="aWC-ZV-lnv"/>
+                            <constraint firstItem="X4K-nh-c2q" firstAttribute="leading" secondItem="jCy-1L-ShB" secondAttribute="leading" id="c6e-R6-ify"/>
+                            <constraint firstAttribute="bottom" secondItem="X4K-nh-c2q" secondAttribute="bottom" constant="2" id="mxm-U7-PJ8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Postcard" id="NX2-9l-usN">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="PnY-hi-9uB">
+                            <connections>
+                                <action selector="cancelAdd:" destination="hMg-kG-1Qd" id="B17-OX-0sa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageDisplaySlider" destination="2bQ-h9-woG" id="7K8-ht-QwO"/>
+                        <outlet property="scrollViewContainer" destination="X4K-nh-c2q" id="PDp-J6-v5D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RtL-s2-h9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="731" y="-606"/>
+        </scene>
         <!--Photo Table-->
         <scene sceneID="19I-2C-gaY">
             <objects>
@@ -21,7 +143,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="tHe-3T-Rdv" kind="push" id="dWg-4I-obl"/>
+                                    <segue destination="tHe-3T-Rdv" kind="push" identifier="displayPhoto" id="dWg-4I-obl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -30,7 +152,13 @@
                             <outlet property="delegate" destination="8Ri-df-cWj" id="onk-dZ-gVl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="kGd-ol-bgK"/>
+                    <navigationItem key="navigationItem" id="kGd-ol-bgK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LmF-hU-7JP">
+                            <connections>
+                                <segue destination="wT5-pD-orn" kind="modal" identifier="addPostcard" id="msa-C9-U8B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NfJ-h1-a8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,6 +263,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="la4-oF-PFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="205" y="191"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jQh-z0-M5Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wT5-pD-orn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QbI-NW-e4I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hMg-kG-1Qd" kind="relationship" relationship="rootViewController" id="TKk-iB-Lh4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzU-HX-OLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="-606"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

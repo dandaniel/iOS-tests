@@ -9,7 +9,7 @@
 #import "PhotoTable.h"
 
 @interface PhotoTable (){
-	NSMutableArray *loadedPhotos;
+	NSArray *loadedPhotos;
 }
 
 @end
@@ -36,15 +36,15 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	
 	//set the title of the view
-	self.title = @"City photos";
+	self.title = @"My postcards";
 	
 	
 	//initialize the loaded photos array
-	loadedPhotos = [[NSMutableArray alloc]init];
+	//loadedPhotos = [[NSMutableArray alloc]init];
 	
 	appPhoto *onePhoto = [[appPhoto alloc] initWithTitle:@"Spectacular bridge" andFilename:@"bridge" andDescription:@"This bridge is a fabulous result of craftmanship done in the 20th century"];
 	
-	[loadedPhotos addObject:onePhoto];
+	//[loadedPhotos addObject:onePhoto];
 	
 }
 
@@ -134,13 +134,18 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 	//set the destination view controller
-	SinglePhotoView *spv = [segue destinationViewController];
-	
-	//get the selected image and pass the instance of photo
-	NSIndexPath *selectedPath = [self.tableView indexPathForSelectedRow];
-	appPhoto *selectedPhoto = loadedPhotos[selectedPath.row];
-	
-	spv.currentPhoto = selectedPhoto;
+	if([[segue identifier] isEqualToString:@"displayPhoto"]){
+		SinglePhotoView *spv = [segue destinationViewController];
+		
+		//get the selected image and pass the instance of photo
+		NSIndexPath *selectedPath = [self.tableView indexPathForSelectedRow];
+		appPhoto *selectedPhoto = loadedPhotos[selectedPath.row];
+		
+		spv.currentPhoto = selectedPhoto;
+	}
+	else{
+		//other segue
+	}
 }
 
 

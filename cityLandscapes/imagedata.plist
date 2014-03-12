@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>tallbridge</key>
+	<dict>
+		<key>description</key>
+		<string>One of the tallest bridgest on earth.</string>
+		<key>filename</key>
+		<string>tallbridge</string>
+		<key>title</key>
+		<string>Tall bridge</string>
+	</dict>
+	<key>smallbridge</key>
+	<dict>
+		<key>description</key>
+		<string>A nice and cozy bridge-lookalike to relax and enjoy the weather.</string>
+		<key>filename</key>
+		<string>smallbridge</string>
+		<key>title</key>
+		<string>Small bridge</string>
+	</dict>
+	<key>rails</key>
+	<dict>
+		<key>description</key>
+		<string>A photo of the tram rails of the calm city at night.</string>
+		<key>filename</key>
+		<string>rails</string>
+		<key>title</key>
+		<string>Rails in the city</string>
+	</dict>
+	<key>longbridge</key>
+	<dict>
+		<key>description</key>
+		<string>One of the longest bridges in the world.</string>
+		<key>filename</key>
+		<string>longbridge</string>
+		<key>title</key>
+		<string>Long bridge</string>
+	</dict>
+	<key>darkcity</key>
+	<dict>
+		<key>description</key>
+		<string>A black and white image from above the city at night.</string>
+		<key>filename</key>
+		<string>darkcity</string>
+		<key>title</key>
+		<string>Dark city</string>
+	</dict>
+	<key>city</key>
+	<dict>
+		<key>description</key>
+		<string>A famous picture of the city, snapped with an iPhone camera.</string>
+		<key>filename</key>
+		<string>city</string>
+		<key>title</key>
+		<string>City view</string>
+	</dict>
+	<key>bridge</key>
+	<dict>
+		<key>description</key>
+		<string>This bridge is a fabulous result of craftmanship done in the 20th century.</string>
+		<key>filename</key>
+		<string>bridge</string>
+		<key>title</key>
+		<string>Spectacular bridge</string>
+	</dict>
+</dict>
+</plist>
