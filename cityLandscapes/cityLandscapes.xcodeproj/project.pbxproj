@@ -479,6 +479,7 @@
 				4CC19C9518CF42BB003044F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CC19C9618CF42BB003044F2 /* Build configuration list for PBXNativeTarget "cityLandscapesTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +488,7 @@
 				4CC19C9818CF42BB003044F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

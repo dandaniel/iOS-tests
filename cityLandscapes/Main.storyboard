@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4K-nh-c2q">
-                                <rect key="frame" x="0.0" y="62" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="62" width="320" height="506"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-h9-woG">
@@ -55,6 +55,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="hMg-kG-1Qd" id="WD3-lD-t7F"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Postcard message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlx-6W-yO8">
                                         <rect key="frame" x="19" y="356" width="281" height="30"/>
@@ -64,6 +67,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="hMg-kG-1Qd" id="fHJ-Uf-xWd"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzY-PY-3Wp">
                                         <rect key="frame" x="20" y="410" width="281" height="33"/>
@@ -98,7 +104,7 @@
                                     <constraint firstItem="GkU-UD-NfX" firstAttribute="leading" secondItem="X4K-nh-c2q" secondAttribute="leading" constant="19" id="qVP-do-MvM"/>
                                     <constraint firstAttribute="trailing" secondItem="lzY-PY-3Wp" secondAttribute="trailing" constant="19" id="qXU-Jb-hoV"/>
                                     <constraint firstItem="GkU-UD-NfX" firstAttribute="top" secondItem="4Hx-mu-ZH4" secondAttribute="bottom" constant="8" id="xqA-On-ZaS"/>
-                                    <constraint firstAttribute="bottom" secondItem="lzY-PY-3Wp" secondAttribute="bottom" constant="61" id="zYN-NG-l1k"/>
+                                    <constraint firstAttribute="bottom" secondItem="lzY-PY-3Wp" secondAttribute="bottom" constant="63" id="zYN-NG-l1k"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -107,7 +113,7 @@
                             <constraint firstAttribute="trailing" secondItem="X4K-nh-c2q" secondAttribute="trailing" id="7Ew-Ed-80s"/>
                             <constraint firstItem="X4K-nh-c2q" firstAttribute="top" secondItem="fKU-g8-zJE" secondAttribute="bottom" constant="-2" id="aWC-ZV-lnv"/>
                             <constraint firstItem="X4K-nh-c2q" firstAttribute="leading" secondItem="jCy-1L-ShB" secondAttribute="leading" id="c6e-R6-ify"/>
-                            <constraint firstAttribute="bottom" secondItem="X4K-nh-c2q" secondAttribute="bottom" constant="2" id="mxm-U7-PJ8"/>
+                            <constraint firstAttribute="bottom" secondItem="X4K-nh-c2q" secondAttribute="bottom" id="mxm-U7-PJ8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Postcard" id="NX2-9l-usN">

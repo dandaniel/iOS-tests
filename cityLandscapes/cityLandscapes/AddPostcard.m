@@ -38,6 +38,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+	
+	//observe keyboard popup
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,10 +54,14 @@
 - (void)viewWillAppear:(BOOL)animated{
 	//change the inset of the main scroll view
 	[self.scrollViewContainer setContentInset:UIEdgeInsetsMake(-50, 0, 0, 0)];
+	[self.scrollViewContainer setUserInteractionEnabled:YES];
+	//set main scroll to hide keyboard on drag
+	[self.scrollViewContainer setKeyboardDismissMode:UIScrollViewKeyboardDismissModeOnDrag];
 	
 	//set the size of the scrollview
 	[self.imageDisplaySlider setScrollEnabled:YES];
 	[self.imageDisplaySlider setAlwaysBounceHorizontal:YES];
+	[self.imageDisplaySlider setUserInteractionEnabled:YES];
 	
 	NSURL *imagedataURL = [[NSBundle mainBundle] URLForResource:@"imagedata" withExtension:@"plist"];
 	
@@ -83,6 +90,7 @@
 		[imageButton setBackgroundImage:imageInstance forState:UIControlStateNormal];
 		[imageButton addTarget:self action:@selector(selectedImageFromList:) forControlEvents:UIControlEventTouchUpInside];
 		[imageButton setTitle:imageFilename forState:UIControlStateNormal];
+		[imageButton setUserInteractionEnabled:YES];
 		
 		xPosition += IMAGE_WIDTH + IMAGE_OFFSET;
 		numberOfImages ++;
@@ -101,7 +109,7 @@
 	
 	self.selectedImage = [sender currentTitle];
 	[sender setImage:[UIImage imageNamed:@"checkmark"] forState:UIControlStateNormal];
-	[sender setImageEdgeInsets:UIEdgeInsetsMake(0, 25, 0, 0)];
+	[sender setImageEdgeInsets:UIEdgeInsetsMake(0, 23, 0, 0)];
 	[[sender titleLabel] removeFromSuperview];
 	[sender setAlpha:0.8];
 }
@@ -118,9 +126,23 @@
 	}
 }
 
-#pragma keyboard dismiss
+#pragma keyboard actions (dismiss and move keyboard)
 
+//dismiss on return
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+	[textField resignFirstResponder];
+	return YES;
+}
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+	//scroll to the bottom of the view
+	CGPoint bottomOffset = CGPointMake(0, self.scrollViewContainer.contentSize.height - self.scrollViewContainer.bounds.size.height);
+	[self.scrollViewContainer setContentOffset:bottomOffset animated:YES];
+}
+
+- (void)keyboardDidShow{
+	
+}
 
 #pragma segue actions
 

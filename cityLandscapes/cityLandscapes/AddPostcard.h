@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddPostcard : UIViewController
+@interface AddPostcard : UIViewController <UITextFieldDelegate>
 
 @end
