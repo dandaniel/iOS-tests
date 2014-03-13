@@ -15,8 +15,8 @@
 @property (strong, nonatomic) NSString *description;
 
 - (id)initWithTitle:(NSString *)title andFilename:(NSString *)filename andDescription:(NSString *)description;
-+ (NSString *) getUrl;
 - (void) saveToPlist:(NSString *)plistURL;
++ (NSString *) getUrl;
 + (NSMutableArray *) readFromPlist:(NSString *)plistURL;
 + (void) removeFromPlist:(NSString *)plistURL andObjects:(NSMutableArray *)objectList;
 
