@@ -82,6 +82,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="createPostcard:" destination="hMg-kG-1Qd" eventType="touchUpInside" id="SCl-Qo-m1D"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -125,6 +128,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageDisplaySlider" destination="2bQ-h9-woG" id="7K8-ht-QwO"/>
+                        <outlet property="postcardDescription" destination="dlx-6W-yO8" id="L2U-AY-jcY"/>
+                        <outlet property="postcardTitle" destination="GkU-UD-NfX" id="Gw3-1g-OAK"/>
                         <outlet property="scrollViewContainer" destination="X4K-nh-c2q" id="PDp-J6-v5D"/>
                     </connections>
                 </viewController>
@@ -190,7 +195,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fEn-WA-sXG">
-                        <barButtonItem key="rightBarButtonItem" title="Details" id="eBP-LW-Q7I">
+                        <barButtonItem key="rightBarButtonItem" title="View message" id="eBP-LW-Q7I">
                             <connections>
                                 <segue destination="Qrf-mV-Des" kind="modal" modalTransitionStyle="partialCurl" id="jJD-pf-bc0"/>
                             </connections>

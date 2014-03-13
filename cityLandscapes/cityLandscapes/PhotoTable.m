@@ -7,9 +7,10 @@
 //
 
 #import "PhotoTable.h"
+#import "AddPostcard.h"
 
 @interface PhotoTable (){
-	NSArray *loadedPhotos;
+	NSMutableArray *loadedPostcardObjects;
 }
 
 @end
@@ -37,15 +38,21 @@
 	
 	//set the title of the view
 	self.title = @"My postcards";
-	
+}
+
+-(void)viewWillAppear:(BOOL)animated{
 	
 	//initialize the loaded photos array
-	//loadedPhotos = [[NSMutableArray alloc]init];
+	loadedPostcardObjects = [[NSMutableArray alloc]init];
 	
-	appPhoto *onePhoto = [[appPhoto alloc] initWithTitle:@"Spectacular bridge" andFilename:@"bridge" andDescription:@"This bridge is a fabulous result of craftmanship done in the 20th century"];
+	//init URL
+	NSString *postcardURL = [appPhoto getUrl];
 	
-	//[loadedPhotos addObject:onePhoto];
-	
+	loadedPostcardObjects = [appPhoto readFromPlist:postcardURL];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+	[self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,7 +72,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return loadedPhotos.count;
+    return loadedPostcardObjects.count;
 }
 
 /*
@@ -83,8 +90,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-	appPhoto *current = [loadedPhotos objectAtIndex:indexPath.row];
+	appPhoto *current = [loadedPostcardObjects objectAtIndex:indexPath.row];
 	cell.textLabel.text = [current title];
+	cell.detailTextLabel.text = [current description];
     
     return cell;
 }
@@ -98,19 +106,36 @@
 }
 */
 
-/*
+#pragma cell editing
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+		//update number of rows
+		[self removeEntryFromDictionary:indexPath];
+		
+		//remove from PLIST
+			//init URL
+			NSString *postcardURL = [appPhoto getUrl];
+			//remove
+		[appPhoto removeFromPlist:postcardURL andObjects:loadedPostcardObjects];
+		
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+		
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+		//not implemented for now
     }   
 }
-*/
+
+//remove the postcard stored in the dictionary
+- (void)removeEntryFromDictionary:(NSIndexPath *)indexPath{
+	//just remove one of the object that is already loaded
+	[loadedPostcardObjects removeObjectAtIndex:indexPath.row];
+}
 
 /*
 // Override to support rearranging the table view.
@@ -139,12 +164,12 @@
 		
 		//get the selected image and pass the instance of photo
 		NSIndexPath *selectedPath = [self.tableView indexPathForSelectedRow];
-		appPhoto *selectedPhoto = loadedPhotos[selectedPath.row];
+		appPhoto *selectedPhoto = loadedPostcardObjects[selectedPath.row];
 		
 		spv.currentPhoto = selectedPhoto;
 	}
 	else{
-		//other segue
+		//other segues
 	}
 }
 
